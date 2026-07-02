@@ -1,8 +1,12 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
 #landing-frame {
   position: relative;
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden;
   /* HTML5 display-role reset for older browsers */
 }
 #landing-frame div, #landing-frame span, #landing-frame iframe,
@@ -405,7 +409,7 @@
   margin-bottom: 54px;
 }
 #landing-frame .products .products-carousel .product-item .product-item__inner {
-  box-shadow: 0px 4px 21.6px 0px rgba(0, 0, 0, 0.1019607843);
+  box-shadow: 0 4px 21.6px 0 rgba(0, 0, 0, 0.1019607843);
   padding: 30px 55px;
 }
 #landing-frame .products .products-carousel .product-item .product-item__img {

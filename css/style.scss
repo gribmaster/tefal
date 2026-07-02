@@ -1,10 +1,13 @@
 $dark: #3B3C4B;
 $container: 1320px;
+body, html {
+  margin: 0;
+  padding: 0;
+}
 #landing-frame {
   position: relative;
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden;
   div, span, iframe,
   h1, h2, h3, h4, h5, h6, p,
   a, img,strong,
@@ -432,7 +435,7 @@ $container: 1320px;
       }
       .product-item {
         .product-item__inner {
-          box-shadow: 0px 4px 21.6px 0px #0000001A;
+          box-shadow: 0 4px 21.6px 0 #0000001A;
           padding: 30px 55px;
         }
 
