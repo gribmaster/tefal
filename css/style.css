@@ -536,10 +536,16 @@ body, html {
   right: 0;
   bottom: -125px;
 }
+@media (max-width: 1370px) {
+  #landing-frame .benefits .benefits-item .benefits-item__sub {
+    right: 30px;
+  }
+}
 @media (max-width: 991px) {
   #landing-frame .benefits .benefits-item .benefits-item__sub {
     position: static;
     bottom: 0;
+    right: 0;
     margin-top: 32px;
     text-align: left;
   }
