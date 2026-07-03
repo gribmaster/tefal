@@ -303,10 +303,38 @@
       }
     };
 
+    const initScrollHeader = () => {
+      const head = root.querySelector('.head');
+
+      if (!head) {
+        return;
+      }
+
+      let ticking = false;
+
+      const updateHeader = () => {
+        head.classList.toggle('is-scrolled', window.scrollY > 40);
+        ticking = false;
+      };
+
+      const onScroll = () => {
+        if (ticking) {
+          return;
+        }
+
+        ticking = true;
+        window.requestAnimationFrame(updateHeader);
+      };
+
+      window.addEventListener('scroll', onScroll, { passive: true });
+      updateHeader();
+    };
+
     initCarousels();
     initModal();
     initVideoModal();
     initBurgerMenu();
+    initScrollHeader();
   };
 
   const start = () => {
