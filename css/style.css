@@ -353,7 +353,7 @@ body, html {
 }
 @media (max-width: 991px) {
   #landing-frame .features .features-item .features-item__title {
-    font-size: 32px;
+    font-size: 26px;
   }
 }
 @media (min-width: 520px) {
