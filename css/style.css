@@ -356,6 +356,11 @@ body, html {
     font-size: 32px;
   }
 }
+@media (min-width: 520px) {
+  #landing-frame .features .features-item .features-item__title br {
+    display: none;
+  }
+}
 #landing-frame .features .features-item .features-item__description {
   font-weight: 400;
   font-size: 24px;
@@ -454,6 +459,11 @@ body, html {
 #landing-frame .benefits {
   background-color: #252526;
   padding: 104px 0;
+}
+@media (max-width: 991px) {
+  #landing-frame .benefits {
+    padding: 40px 0 0;
+  }
 }
 #landing-frame .benefits .benefits-title {
   font-weight: 700;

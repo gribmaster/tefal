@@ -397,6 +397,11 @@ body, html {
         @media (max-width: 991px) {
           font-size: 32px;
         }
+        @media (min-width: 520px) {
+          br {
+            display: none;
+          }
+        }
       }
 
       .features-item__description {
@@ -507,6 +512,9 @@ body, html {
   .benefits {
     background-color: #252526;
     padding: 104px 0;
+    @media (max-width: 991px) {
+      padding: 40px 0 0;
+    }
     .benefits-title {
       font-weight: 700;
       font-size: 42px;
